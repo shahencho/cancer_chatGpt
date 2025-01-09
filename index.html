@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Quiz Defense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cancer Quiz Defense</h1>
+    <div id="game-container">
+        <!-- Map Display -->
+        <div id="map-container">
+            <img id="map" src="assets/Level1.jpg" alt="Game Map">
+        </div>
+
+        <!-- Question Display -->
+        <div id="question-container">
+            <p id="question">Question will appear here</p>
+            <div id="answers">
+                <button id="answerA">A</button>
+                <button id="answerB">B</button>
+                <button id="answerC">C</button>
+                <button id="answerD">D</button>
+            </div>
+        </div>
+
+        <!-- Feedback Display -->
+        <div id="feedback"></div>
+
+        <!-- Try Again Button -->
+        <button id="retry-btn" style="display: none;" onclick="resetGame()">Try Again?</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
